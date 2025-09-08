@@ -22,3 +22,9 @@ _Lưu ý: Các máy thí nghiệm không có quyền truy cập Internet. Để 
 ![Follow stream gói tin](./images/2.1.png)
 
 > Kết quả: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+
+### Câu 3: Chúng ta cần xác định xem có bất kỳ lỗ hổng nào được khai thác không. Tên của malicious web shell đã được tải lên thành công?
+> Trở lại với vấn đề tìm file shell mà kẻ tấn công đã upload thành công lên hệ thống nạn nhân.
+
+> Dựa vào định dạng kết quả thì file được up lên có mẫu aaaa.bbb.ccc theo hướng này chỉ cần chú ý các gói tin liên quan
+![Gói tin chứa webshell](./images/3.1.png)
