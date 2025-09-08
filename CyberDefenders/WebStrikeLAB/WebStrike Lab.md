@@ -11,6 +11,14 @@ _Lưu ý: Các máy thí nghiệm không có quyền truy cập Internet. Để 
 ![Ảnh phát hiện IP nghi ngờ](./images/1.1.png)
 
 > Sau đó sử dụng công cụ hoặc dùng nền tảng tra cứu IP có tên AbuseIPDB để kiểm tra xem IP trên thuộc thành phố nào.
-> ![Điều tra Ip](./images/1.2.png)
 
-> Kết quả tra cứu cho thấy nó thuộc thành phố Tianjin (Thiên Tân) của TRung Quốc.
+![Điều tra Ip](./images/1.2.png)
+
+> Kết quả tra cứu cho thấy nó thuộc thành phố Tianjin (Thiên Tân) của Trung Quốc.
+
+### Câu 2: Biết được User-Agent của kẻ tấn công hỗ trợ trong việc tạo ra các quy tắc lọc mạnh mẽ. Tên User-agent đầy đủ của kẻ tấn công là gì?
+> Follow stream vào bất kì gói tin nào có IP tấn công đã điều tra trước đó để xem User-agent
+
+![Follow stream gói tin](./images/2.1.png)
+
+> Kết quả: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
