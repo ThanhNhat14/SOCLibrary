@@ -58,3 +58,26 @@
 > Với thu thập trước đó liên quan đến credential from web browsers có ID là T1555.003. Nhưng đây là sub technique nên chọn technique cha nó là *Credentials from password store* có ID là T1555
 
 >Kết quả: *T1555* 
+
+### Câu 6: Bằng cách kiểm tra các tiến trình con được hiển thị trong báo cáo hộp cát Any.run, phần mềm độc hại nhắm mục tiêu vào thư mục nào để xóa tất cả các tệp DLL?
+> Câu này để giải quyết rất dễ, tạo báo cáo của ANYRun trong phần Malware Configuration sẽ thấy câu lệnh mà hacker sử dụng để thự hiện xóa tất cả các tệp thư viện.
+
+![xoadll](./images/6.1.png)
+
+> Hacker sử dụng *" & del "C:\ProgramData\*.dll"" & exit* để xóa tất cả thư viện và thoát khỏi hệ thống. Thư mục góc thu được là đáp án.
+
+> Kết quả: *C:\ProgramData*
+
+### Câu 7: Hiểu về hành vi của phần mềm độc hại sau khi xuất sắc về dữ liệu có thể cung cấp cái nhìn sâu sắc về các kỹ thuật trốn tránh của nó. Bằng cách phân tích các tiến trình con, sau khi tìm hiểu thành công dữ liệu của người dùng, cần bao nhiêu giây để phần mềm độc hại tự xóa?
+
+> Câu này cũng dễ có trong báo cáo.
+
+>Vào phần Process Information để xem có những gì hữu ích cho chúng ta.
+
+![tientrinhcon](./images/7.1.png)
+
+> Câu lệnh mà hacker dùng đáng chú ý nhất là *"C:\Windows\system32\cmd.exe" /c timeout /t 5 & del /f /q*.
+
+>Kết quả nhiều khả năng là: *5*
+
+*the end lab*
