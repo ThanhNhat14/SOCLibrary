@@ -18,3 +18,27 @@
 > Câu này tự điều tra siêu dễ
 
 > Kết quả: *192.168.232.215*
+
+### Câu 3: Là một phần của cuộc điều tra của chúng tôi, việc xác định tất cả các máy bị ảnh hưởng là rất cần thiết. Địa chỉ IP của máy thứ hai đã nhận được phản hồi bị nhiễm độc từ máy lừa đảo?
+> Trước tiên vào lại xem các gói tin liên quan SMB2 sẽ có 2 IP đuôi cuối cùng là 148 và 176.
+
+> Cài nào xuất hiện thứ 2 thì chọn :)
+
+> Kết quả: *192.168.232.176*
+
+### Câu 4: Chúng tôi nghi ngờ rằng tài khoản người dùng có thể đã bị xâm phạm. Để đánh giá điều này, chúng ta phải xác định tên người dùng liên quan đến tài khoản bị xâm phạm. Tên người dùng của tài khoản mà kẻ tấn công bị xâm phạm là gì?
+
+> Trước tiên lọc các gói tin liên quan usernam của NTLM bằng *ntlmssp.auth.username*
+
+![username](./images/4.1.png)
+>Dễ thấy kết quả sau cùng tên của username
+
+> Kết quả: *janesmith*
+
+### Câu 5: Là một phần của cuộc điều tra của chúng tôi, chúng tôi mong muốn hiểu mức độ của các hoạt động của kẻ tấn công. Tên máy chủ của máy mà kẻ tấn công truy cập qua SMB là gì?
+
+> Sử dụng ip.dst == 192.168.232.215 and smb2 cùng với hint "target infor" để lấy đáp án
+
+> Kết quả:*ACCOUNTINGPC*
+
+*the end lab*
